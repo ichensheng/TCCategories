@@ -85,6 +85,13 @@ NSString const * kSearchDisplayController = @"searchDisplayController";
     self.tableView.tableHeaderView = self.searchBar;
 }
 
+/**
+ *  滚动到顶部
+ */
+- (void)tc_scrollToTop {
+    [self.tableView tc_scrollToTop];
+}
+
 #pragma mark - Getters and Setters
 
 - (void)setShowSearchGuideView:(BOOL)showSearchGuideView {
