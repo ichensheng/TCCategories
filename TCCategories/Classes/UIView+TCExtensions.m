@@ -44,10 +44,7 @@ static CGFloat kDefaultBorderWidth = 0.5f;          // 边框默认宽度
                 if ([view isKindOfClass:NSClassFromString(@"_UISearchDisplayControllerDimmingView")]) {
                     UIViewController *currentController = [[UIApplication sharedApplication] tc_currentViewController];
                     if ([currentController performSelector:@selector(isShowSearchGuideView)]) {
-                        UIControl *dimmingView = (UIControl *)view;
                         UIView *dimmingSuperView = (UIView *)subview;
-                        // 将默认遮罩移到屏幕之外
-                        dimmingView.top = 10000;
                         BOOL added = NO;
                         for (UIView *v in dimmingSuperView.subviews) {
                             if ([v isKindOfClass:[TCSearchGuideView class]]) {
@@ -58,6 +55,10 @@ static CGFloat kDefaultBorderWidth = 0.5f;          // 边框默认宽度
                         searchGuideView.hidden = NO;
                         if (!added) {
                             [dimmingSuperView addSubview:searchGuideView];
+                            
+                            // 将默认遮罩移到屏幕之外
+                            UIControl *dimmingView = (UIControl *)view;
+                            dimmingView.top = 10000;
                         }
                     }
                     return;
