@@ -14,7 +14,11 @@
  *  滚动到顶部
  */
 - (void)tc_scrollToTop {
-    [self.collectionView tc_scrollToTop];
+    if (self.navigationController) {
+        [self.collectionView setContentOffset:CGPointMake(0, -64) animated:YES];
+    } else {
+        [self.collectionView setContentOffset:CGPointMake(0, -44) animated:YES];
+    }
 }
 
 @end

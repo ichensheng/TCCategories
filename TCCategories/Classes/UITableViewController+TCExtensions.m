@@ -89,7 +89,11 @@ NSString const * kSearchDisplayController = @"searchDisplayController";
  *  滚动到顶部
  */
 - (void)tc_scrollToTop {
-    [self.tableView tc_scrollToTop];
+    if (self.navigationController) {
+        [self.tableView setContentOffset:CGPointMake(0, -64) animated:YES];
+    } else {
+        [self.tableView setContentOffset:CGPointMake(0, -44) animated:YES];
+    }
 }
 
 #pragma mark - Getters and Setters
