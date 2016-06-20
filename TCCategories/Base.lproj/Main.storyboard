@@ -16,8 +16,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ptj-Dm-bdr">
+                                <rect key="frame" x="181" y="120" width="238" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="dx7-2h-mPo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="pjp-ov-k8W"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pjp-ov-k8W"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ptj-Dm-bdr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="250" id="10g-F0-0bf"/>
+                            <constraint firstItem="Ptj-Dm-bdr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="31m-54-Y6u"/>
+                            <constraint firstItem="Ptj-Dm-bdr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Ay-Uj-GI2"/>
+                            <constraint firstItem="Ptj-Dm-bdr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0I-GI-JOz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="10g-F0-0bf"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Ptj-Dm-bdr" id="trw-u3-mEP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

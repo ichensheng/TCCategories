@@ -98,7 +98,7 @@ static CGFloat kDefaultBorderWidth = 0.5f;          // 边框默认宽度
         return;
     }
     
-    __weak typeof(self) weakself = self;
+    __weak typeof(self) weakSelf = self;
     if ((borderPos & TCBorderPositionTop) == TCBorderPositionTop) {
         UIView *border = [self findBorder:TCBorderPositionTop];
         if (border) {
@@ -111,7 +111,7 @@ static CGFloat kDefaultBorderWidth = 0.5f;          // 边框默认宽度
             [border mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.left.mas_equalTo(0);
                 make.top.mas_equalTo(0);
-                make.width.equalTo(weakself.mas_width);
+                make.width.equalTo(weakSelf.mas_width);
                 make.height.mas_equalTo(borderWidth);
             }];
         }
@@ -131,7 +131,7 @@ static CGFloat kDefaultBorderWidth = 0.5f;          // 边框默认宽度
                 make.right.mas_equalTo(0);
                 make.top.mas_equalTo(0);
                 make.width.mas_equalTo(borderWidth);
-                make.height.mas_equalTo(weakself.mas_height);
+                make.height.mas_equalTo(weakSelf.mas_height);
             }];
         }
         border.backgroundColor = borderColor;
@@ -149,7 +149,7 @@ static CGFloat kDefaultBorderWidth = 0.5f;          // 边框默认宽度
             [border mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.left.mas_equalTo(0);
                 make.bottom.mas_equalTo(0);
-                make.width.equalTo(weakself.mas_width);
+                make.width.equalTo(weakSelf.mas_width);
                 make.height.mas_equalTo(borderWidth);
             }];
         }
@@ -169,7 +169,7 @@ static CGFloat kDefaultBorderWidth = 0.5f;          // 边框默认宽度
                 make.left.mas_equalTo(0);
                 make.top.mas_equalTo(0);
                 make.width.mas_equalTo(borderWidth);
-                make.height.mas_equalTo(weakself.mas_height);
+                make.height.mas_equalTo(weakSelf.mas_height);
             }];
         }
         border.backgroundColor = borderColor;

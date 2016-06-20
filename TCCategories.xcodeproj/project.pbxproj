@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1FFB0A4761F558426F7390EA /* libPods-TCCategories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E10695B33EBA37DC25B9CC80 /* libPods-TCCategories.a */; };
 		3411EE651D119F660080C260 /* UICollectionViewController+TCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EE641D119F660080C260 /* UICollectionViewController+TCExtensions.m */; };
+		3411EE911D17AA8D0080C260 /* CornerRadius@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3411EE901D17AA8C0080C260 /* CornerRadius@2x.png */; };
+		3411EE941D17AB650080C260 /* UIImageView+TCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EE931D17AB650080C260 /* UIImageView+TCExtensions.m */; };
+		3411EE961D17AD0E0080C260 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3411EE951D17AD0E0080C260 /* test.jpg */; };
 		34A2DB921D0D6D160043CF34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A2DB911D0D6D160043CF34 /* main.m */; };
 		34A2DB951D0D6D160043CF34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A2DB941D0D6D160043CF34 /* AppDelegate.m */; };
 		34A2DB981D0D6D160043CF34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A2DB971D0D6D160043CF34 /* ViewController.m */; };
@@ -55,6 +58,10 @@
 /* Begin PBXFileReference section */
 		3411EE631D119F660080C260 /* UICollectionViewController+TCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewController+TCExtensions.h"; sourceTree = "<group>"; };
 		3411EE641D119F660080C260 /* UICollectionViewController+TCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewController+TCExtensions.m"; sourceTree = "<group>"; };
+		3411EE901D17AA8C0080C260 /* CornerRadius@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CornerRadius@2x.png"; sourceTree = "<group>"; };
+		3411EE921D17AB650080C260 /* UIImageView+TCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+TCExtensions.h"; sourceTree = "<group>"; };
+		3411EE931D17AB650080C260 /* UIImageView+TCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+TCExtensions.m"; sourceTree = "<group>"; };
+		3411EE951D17AD0E0080C260 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		34A2DB8D1D0D6D160043CF34 /* TCCategories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCategories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A2DB911D0D6D160043CF34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34A2DB931D0D6D160043CF34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,6 +171,7 @@
 				34A2DB961D0D6D160043CF34 /* ViewController.h */,
 				34A2DB971D0D6D160043CF34 /* ViewController.m */,
 				34A2DB991D0D6D160043CF34 /* Main.storyboard */,
+				3411EE951D17AD0E0080C260 /* test.jpg */,
 				34A2DB9C1D0D6D160043CF34 /* Assets.xcassets */,
 				34A2DB9E1D0D6D160043CF34 /* LaunchScreen.storyboard */,
 				34A2DBA11D0D6D160043CF34 /* Info.plist */,
@@ -216,6 +224,8 @@
 				34A2DBD21D0D6D690043CF34 /* UIColor+TCExtensions.m */,
 				34A2DBD31D0D6D690043CF34 /* UIImage+TCExtensions.h */,
 				34A2DBD41D0D6D690043CF34 /* UIImage+TCExtensions.m */,
+				3411EE921D17AB650080C260 /* UIImageView+TCExtensions.h */,
+				3411EE931D17AB650080C260 /* UIImageView+TCExtensions.m */,
 				34A2DBD51D0D6D690043CF34 /* UINavigationController+TCExtensions.h */,
 				34A2DBD61D0D6D690043CF34 /* UINavigationController+TCExtensions.m */,
 				34A2DBD71D0D6D690043CF34 /* UINavigationItem+TCExtensions.h */,
@@ -234,6 +244,7 @@
 				34A2DBE21D0D6D690043CF34 /* UIViewController+TCExtensions.m */,
 				34A2DBC41D0D6D680043CF34 /* barbuttonicon_back@2x.png */,
 				34A2DBC51D0D6D680043CF34 /* barbuttonicon_back@3x.png */,
+				3411EE901D17AA8C0080C260 /* CornerRadius@2x.png */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -364,7 +375,9 @@
 			files = (
 				34A2DBE31D0D6D690043CF34 /* barbuttonicon_back@2x.png in Resources */,
 				34A2DBA01D0D6D160043CF34 /* LaunchScreen.storyboard in Resources */,
+				3411EE911D17AA8D0080C260 /* CornerRadius@2x.png in Resources */,
 				34A2DBE41D0D6D690043CF34 /* barbuttonicon_back@3x.png in Resources */,
+				3411EE961D17AD0E0080C260 /* test.jpg in Resources */,
 				34A2DB9D1D0D6D160043CF34 /* Assets.xcassets in Resources */,
 				34A2DB9B1D0D6D160043CF34 /* Main.storyboard in Resources */,
 			);
@@ -447,6 +460,7 @@
 				34A2DBF21D0D6D690043CF34 /* UIViewController+TCExtensions.m in Sources */,
 				34A2DBE81D0D6D690043CF34 /* UIApplication+TCExtensions.m in Sources */,
 				34A2DBE71D0D6D690043CF34 /* NSUUID+TCExtensions.m in Sources */,
+				3411EE941D17AB650080C260 /* UIImageView+TCExtensions.m in Sources */,
 				34A2DBEC1D0D6D690043CF34 /* UINavigationController+TCExtensions.m in Sources */,
 				34A2DBE61D0D6D690043CF34 /* NSString+TCExtensions.m in Sources */,
 				34A2DBF01D0D6D690043CF34 /* UITableViewController+TCExtensions.m in Sources */,
