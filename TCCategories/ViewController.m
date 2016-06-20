@@ -20,7 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.imageView tc_setCorner];
-    self.imageView.image = [UIImage imageNamed:@"test.jpg"];
+    [self.imageView tc_setImageForHeader:[UIImage imageNamed:@"test.jpg"]
+                                withSize:self.imageView.size];
 }
 
 @end

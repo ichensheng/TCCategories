@@ -205,6 +205,8 @@ static CGFloat kDefaultBorderWidth = 0.5f;          // 边框默认宽度
     CALayer *layer  = self.layer;
     [layer setMasksToBounds:YES];
     [layer setCornerRadius:radius];
+    layer.shouldRasterize = YES;
+    layer.rasterizationScale = [UIScreen mainScreen].scale;
 }
 
 /**

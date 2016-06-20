@@ -11,11 +11,21 @@
 @interface UIImageView (TCExtensions)
 
 /**
+ *  设置图片，带圆角，头像默认5像素圆角
+ *
+ *  @param image  头像图片
+ *  @param radius 头像大小
+ */
+- (void)tc_setImageForHeader:(UIImage *)image withSize:(CGSize)size;
+
+/**
  *  设置图片，带圆角
  *
- *  @param image 图片
+ *  @param radius 圆角半径
+ *  @param image  图片
+ *  @param size   圆角图片大小
  */
-- (void)tc_setImageWithCorner:(UIImage *)image;
+- (void)tc_setImageWithRadius:(CGFloat)radius image:(UIImage *)image size:(CGSize)size;
 
 /**
  *  设置圆角，大概5像素
