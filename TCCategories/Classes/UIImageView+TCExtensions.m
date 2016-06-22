@@ -18,7 +18,7 @@
  *  @param image  头像图片
  *  @param radius 头像大小
  */
-- (void)tc_setImageForHeader:(UIImage *)image withSize:(CGSize)size {
+- (void)tc_setHeaderImage:(UIImage *)image withSize:(CGSize)size {
     [self tc_setImageWithRadius:5.0f image:image size:size];
 }
 
