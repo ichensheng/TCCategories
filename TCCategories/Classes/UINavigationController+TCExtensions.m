@@ -89,7 +89,7 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
             if ([viewController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-                enabled = [viewController performSelector:@selector(interactivePopGestureRecognizer)];
+                enabled = (BOOL) [viewController performSelector:@selector(interactivePopGestureRecognizer)];
             }
 #pragma clang diagnostic pop
             self.interactivePopGestureRecognizer.enabled = enabled;

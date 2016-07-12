@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.source_files = "TCCategories/Classes/*.{h,m}"
 	s.resources 	 = "TCCategories/Classes/*.png"
   s.requires_arc = true
-  s.dependency "Masonry", "~> 1.0.0"
+  s.dependency "Masonry", "~> 1.0.1"
 	s.dependency "JRSwizzle", "~> 1.0"
 end
