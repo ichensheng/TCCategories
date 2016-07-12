@@ -66,6 +66,8 @@
         if ([popViewController performSelector:@selector(beforePopViewController)]) {
             [self tc_popViewControllerAnimated:animated];
         }
+    } else {
+        [self tc_popViewControllerAnimated:animated];
     }
 #pragma clang diagnostic pop
 }
