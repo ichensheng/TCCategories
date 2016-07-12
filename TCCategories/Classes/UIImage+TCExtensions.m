@@ -64,8 +64,6 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
     CGColorSpaceRelease(colorSpace);
     CGImageRelease(imageMasked);
     return img;
-    
-    return img;
 }
 
 /**

@@ -33,6 +33,13 @@
         if (!result || error) {
             NSLog(@"Can't swizzle methods - %@", [error description]);
         }
+        
+        result = [[self class] jr_swizzleMethod:@selector(popViewControllerAnimated:)
+                                     withMethod:@selector(tc_popViewControllerAnimated:)
+                                          error:&error];
+        if (!result || error) {
+            NSLog(@"Can't swizzle methods - %@", [error description]);
+        }
     });
 }
 
@@ -49,6 +56,18 @@
     if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.interactivePopGestureRecognizer.delegate = nil;
     }
+}
+
+- (void)tc_popViewControllerAnimated:(BOOL)animated {
+    UIViewController *popViewController = [self.viewControllers lastObject];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    if ([popViewController respondsToSelector:@selector(beforePopViewController)]) {
+        if ([popViewController performSelector:@selector(beforePopViewController)]) {
+            [self tc_popViewControllerAnimated:animated];
+        }
+    }
+#pragma clang diagnostic pop
 }
 
 #pragma mark - UINavigationControllerDelegate
