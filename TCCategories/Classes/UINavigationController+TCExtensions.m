@@ -85,7 +85,14 @@
     
     if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         if (self.viewControllers.count > 1) {
-            self.interactivePopGestureRecognizer.enabled = YES;
+            BOOL enabled = YES;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+            if ([viewController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+                enabled = [viewController performSelector:@selector(interactivePopGestureRecognizer)];
+            }
+#pragma clang diagnostic pop
+            self.interactivePopGestureRecognizer.enabled = enabled;
         } else {
             self.interactivePopGestureRecognizer.enabled = NO;
         }
