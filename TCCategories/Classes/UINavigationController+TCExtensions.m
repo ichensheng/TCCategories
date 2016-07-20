@@ -59,12 +59,13 @@
 }
 
 - (void)tc_popViewControllerAnimated:(BOOL)animated {
-    UIViewController *popViewController = [self.viewControllers lastObject];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-    if ([popViewController respondsToSelector:@selector(beforePopViewController)]) {
-        if ([popViewController performSelector:@selector(beforePopViewController)]) {
+    if ([[self.viewControllers lastObject] respondsToSelector:@selector(beforePopViewController)]) {
+        if ([[self.viewControllers lastObject] performSelector:@selector(beforePopViewController)]) {
             [self tc_popViewControllerAnimated:animated];
+        } else {
+            NSLog(@"beforePopViewController返回的值为NO，pop失败！");
         }
     } else {
         [self tc_popViewControllerAnimated:animated];
