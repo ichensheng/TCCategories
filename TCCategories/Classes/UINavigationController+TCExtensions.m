@@ -58,19 +58,20 @@
     }
 }
 
-- (void)tc_popViewControllerAnimated:(BOOL)animated {
+- (UIViewController *)tc_popViewControllerAnimated:(BOOL)animated {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-    if ([[self.viewControllers lastObject] respondsToSelector:@selector(beforePopViewController)]) {
-        if ([[self.viewControllers lastObject] performSelector:@selector(beforePopViewController)]) {
-            [self tc_popViewControllerAnimated:animated];
+    if ([[self.viewControllers lastObject] respondsToSelector:@selector(tc_beforePopViewController)]) {
+        if ([[self.viewControllers lastObject] performSelector:@selector(tc_beforePopViewController)]) {
+#pragma clang diagnostic pop
+            return [self tc_popViewControllerAnimated:animated];
         } else {
             NSLog(@"beforePopViewController返回的值为NO，pop失败！");
+            return nil;
         }
     } else {
-        [self tc_popViewControllerAnimated:animated];
+        return [self tc_popViewControllerAnimated:animated];
     }
-#pragma clang diagnostic pop
 }
 
 #pragma mark - UINavigationControllerDelegate
