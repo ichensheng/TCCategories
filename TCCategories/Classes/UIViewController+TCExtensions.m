@@ -185,4 +185,12 @@ NSString const * kAddedBackButton = @"addedBackButton";
     return added;
 }
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 @end
