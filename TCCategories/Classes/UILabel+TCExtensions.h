@@ -10,6 +10,6 @@
 
 @interface UILabel (TCExtensions)
 
-@property(nonatomic) UIEdgeInsets insets;
+@property(nonatomic, assign) UIEdgeInsets insets;
 
 @end

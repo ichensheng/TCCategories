@@ -28,7 +28,11 @@ NSString const * kInsets = @"kInsets";
 }
 
 - (void)tc_drawTextInRect:(CGRect)rect {
-    [self tc_drawTextInRect:UIEdgeInsetsInsetRect(rect, self.insets)];
+    if (UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsetsZero, self.insets)) {
+        [self tc_drawTextInRect:UIEdgeInsetsInsetRect(rect, self.insets)];
+    } else {
+        [self tc_drawTextInRect:rect];
+    }
 }
 
 - (void)setInsets:(UIEdgeInsets)insets {
