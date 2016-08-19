@@ -66,7 +66,7 @@
 #pragma clang diagnostic pop
             return [self tc_popViewControllerAnimated:animated];
         } else {
-            NSLog(@"beforePopViewController返回的值为NO，pop失败！");
+            NSLog(@"tc_beforePopViewController返回的值为NO，pop失败！");
             return nil;
         }
     } else {
@@ -92,6 +92,9 @@
 #pragma clang diagnostic ignored "-Wundeclared-selector"
             if ([viewController respondsToSelector:@selector(tc_interactivePopGestureRecognizer)]) {
                 enabled = (BOOL) [viewController performSelector:@selector(tc_interactivePopGestureRecognizer)];
+                if (enabled) {
+                    NSLog(@"该页面禁止滑动返回！");
+                }
             }
 #pragma clang diagnostic pop
             self.interactivePopGestureRecognizer.enabled = enabled;

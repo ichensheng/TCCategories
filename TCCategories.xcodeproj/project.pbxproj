@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1FFB0A4761F558426F7390EA /* libPods-TCCategories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E10695B33EBA37DC25B9CC80 /* libPods-TCCategories.a */; };
+		340DD0251D66B19500E13FD8 /* UILabel+TCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 340DD0241D66B19500E13FD8 /* UILabel+TCExtensions.m */; };
 		3411EE651D119F660080C260 /* UICollectionViewController+TCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EE641D119F660080C260 /* UICollectionViewController+TCExtensions.m */; };
 		3411EE911D17AA8D0080C260 /* CornerRadius@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3411EE901D17AA8C0080C260 /* CornerRadius@2x.png */; };
 		3411EE941D17AB650080C260 /* UIImageView+TCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EE931D17AB650080C260 /* UIImageView+TCExtensions.m */; };
@@ -56,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340DD0231D66B19500E13FD8 /* UILabel+TCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TCExtensions.h"; sourceTree = "<group>"; };
+		340DD0241D66B19500E13FD8 /* UILabel+TCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TCExtensions.m"; sourceTree = "<group>"; };
 		3411EE631D119F660080C260 /* UICollectionViewController+TCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewController+TCExtensions.h"; sourceTree = "<group>"; };
 		3411EE641D119F660080C260 /* UICollectionViewController+TCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewController+TCExtensions.m"; sourceTree = "<group>"; };
 		3411EE901D17AA8C0080C260 /* CornerRadius@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CornerRadius@2x.png"; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 				34A2DBE01D0D6D690043CF34 /* UIView+TCExtensions.m */,
 				34A2DBE11D0D6D690043CF34 /* UIViewController+TCExtensions.h */,
 				34A2DBE21D0D6D690043CF34 /* UIViewController+TCExtensions.m */,
+				340DD0231D66B19500E13FD8 /* UILabel+TCExtensions.h */,
+				340DD0241D66B19500E13FD8 /* UILabel+TCExtensions.m */,
 				34A2DBC41D0D6D680043CF34 /* barbuttonicon_back@2x.png */,
 				34A2DBC51D0D6D680043CF34 /* barbuttonicon_back@3x.png */,
 				3411EE901D17AA8C0080C260 /* CornerRadius@2x.png */,
@@ -457,6 +462,7 @@
 				34A2DBEA1D0D6D690043CF34 /* UIColor+TCExtensions.m in Sources */,
 				34A2DB981D0D6D160043CF34 /* ViewController.m in Sources */,
 				34A2DB951D0D6D160043CF34 /* AppDelegate.m in Sources */,
+				340DD0251D66B19500E13FD8 /* UILabel+TCExtensions.m in Sources */,
 				34A2DBF21D0D6D690043CF34 /* UIViewController+TCExtensions.m in Sources */,
 				34A2DBE81D0D6D690043CF34 /* UIApplication+TCExtensions.m in Sources */,
 				34A2DBE71D0D6D690043CF34 /* NSUUID+TCExtensions.m in Sources */,

@@ -24,5 +24,6 @@
 #import "UINavigationController+TCExtensions.h"
 #import "UIColor+TCExtensions.h"
 #import "UIImageView+TCExtensions.h"
+#import "UILabel+TCExtensions.h"
 
 #endif /* TCCategories_h */
