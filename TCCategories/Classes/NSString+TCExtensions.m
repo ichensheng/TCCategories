@@ -13,13 +13,7 @@
 @implementation NSString (TCExtensions)
 
 - (BOOL)tc_isBlank {
-    if ([self isKindOfClass:[NSNull class]]) {
-        return YES;
-    }
-    if ([[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] == 0) {
-        return YES;
-    }
-    return NO;
+    return [[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0;
 }
 
 - (BOOL)tc_isChinese {
