@@ -20,4 +20,11 @@
  */
 - (void)tc_adjustBackButtonForTitle:(NSString *)title;
 
+/**
+ *  当前控制器的上一个控制器
+ *
+ *  @return UIViewController
+ */
+- (UIViewController *)tc_previousViewController;
+
 @end

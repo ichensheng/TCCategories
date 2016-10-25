@@ -83,6 +83,20 @@ NSString const * kAddedBackButton = @"addedBackButton";
     });
 }
 
+/**
+ *  当前控制器的上一个控制器
+ *
+ *  @return UIViewController
+ */
+- (UIViewController *)tc_previousViewController {
+    NSInteger count = self.navigationController.viewControllers.count;
+    if (count >= 2) {
+        UIViewController *previousViewController = self.navigationController.viewControllers[count - 2];
+        return previousViewController;
+    }
+    return nil;
+}
+
 #pragma mark - Private Methods
 
 - (void)customBackButton {
