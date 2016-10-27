@@ -18,6 +18,7 @@
 #import "UITabBarController+TCExtensions.h"
 #import "UIView+TCExtensions.h"
 #import "NSDate+TCExtensions.h"
+#import "NSDateFormatter+TCExtensions.h"
 #import "UIApplication+TCExtensions.h"
 #import "UINavigationItem+TCExtensions.h"
 #import "UIViewController+TCExtensions.h"

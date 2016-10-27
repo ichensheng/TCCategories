@@ -13,6 +13,7 @@
 		3411EE911D17AA8D0080C260 /* CornerRadius@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3411EE901D17AA8C0080C260 /* CornerRadius@2x.png */; };
 		3411EE941D17AB650080C260 /* UIImageView+TCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3411EE931D17AB650080C260 /* UIImageView+TCExtensions.m */; };
 		3411EE961D17AD0E0080C260 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3411EE951D17AD0E0080C260 /* test.jpg */; };
+		3421341B1DC056E5000248B6 /* NSDateFormatter+TCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3421341A1DC056E5000248B6 /* NSDateFormatter+TCExtensions.m */; };
 		34A2DB921D0D6D160043CF34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A2DB911D0D6D160043CF34 /* main.m */; };
 		34A2DB951D0D6D160043CF34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A2DB941D0D6D160043CF34 /* AppDelegate.m */; };
 		34A2DB981D0D6D160043CF34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A2DB971D0D6D160043CF34 /* ViewController.m */; };
@@ -65,6 +66,8 @@
 		3411EE921D17AB650080C260 /* UIImageView+TCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+TCExtensions.h"; sourceTree = "<group>"; };
 		3411EE931D17AB650080C260 /* UIImageView+TCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+TCExtensions.m"; sourceTree = "<group>"; };
 		3411EE951D17AD0E0080C260 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		342134191DC056E5000248B6 /* NSDateFormatter+TCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+TCExtensions.h"; sourceTree = "<group>"; };
+		3421341A1DC056E5000248B6 /* NSDateFormatter+TCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+TCExtensions.m"; sourceTree = "<group>"; };
 		34A2DB8D1D0D6D160043CF34 /* TCCategories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCategories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A2DB911D0D6D160043CF34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34A2DB931D0D6D160043CF34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 				34A2DBCC1D0D6D680043CF34 /* TCCategories.h */,
 				34A2DBC61D0D6D680043CF34 /* NSDate+TCExtensions.h */,
 				34A2DBC71D0D6D680043CF34 /* NSDate+TCExtensions.m */,
+				342134191DC056E5000248B6 /* NSDateFormatter+TCExtensions.h */,
+				3421341A1DC056E5000248B6 /* NSDateFormatter+TCExtensions.m */,
 				34A2DBC81D0D6D680043CF34 /* NSString+TCExtensions.h */,
 				34A2DBC91D0D6D680043CF34 /* NSString+TCExtensions.m */,
 				34A2DBCA1D0D6D680043CF34 /* NSUUID+TCExtensions.h */,
@@ -461,6 +466,7 @@
 				34A2DBEB1D0D6D690043CF34 /* UIImage+TCExtensions.m in Sources */,
 				34A2DBEA1D0D6D690043CF34 /* UIColor+TCExtensions.m in Sources */,
 				34A2DB981D0D6D160043CF34 /* ViewController.m in Sources */,
+				3421341B1DC056E5000248B6 /* NSDateFormatter+TCExtensions.m in Sources */,
 				34A2DB951D0D6D160043CF34 /* AppDelegate.m in Sources */,
 				340DD0251D66B19500E13FD8 /* UILabel+TCExtensions.m in Sources */,
 				34A2DBF21D0D6D690043CF34 /* UIViewController+TCExtensions.m in Sources */,
