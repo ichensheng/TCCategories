@@ -50,6 +50,21 @@
                       lineSpacing:(CGFloat)lineSpacing;
 
 /**
+ *  获取字符串指定字体的CGRect
+ *
+ *  @param size 范围，大小不超出该范围
+ *  @param font 字体
+ *  @param lineSpacing 行间距
+ *  @param line 显示行数
+ *
+ *  @return 返回计算之后的CGRect
+ */
+- (CGSize)tc_boundingSizeWithFont:(UIFont *)font
+                   constraintSize:(CGSize)size
+                      lineSpacing:(CGFloat)lineSpacing
+                         showLine:(NSInteger)line;
+
+/**
  *  获取字符串在指定字体和约束size以及显示行数之后的size
  *
  *  @param font 字体

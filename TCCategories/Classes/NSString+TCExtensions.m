@@ -44,12 +44,14 @@
 
 - (CGSize)tc_boundingSizeWithFont:(UIFont *)font
                    constraintSize:(CGSize)size
+                      lineSpacing:(CGFloat)lineSpacing
                          showLine:(NSInteger)line {
     
     NSString *seedString = @"国";
     CGFloat lineHeight = [seedString tc_boundingSizeWithFont:font
-                                              constraintSize:CGSizeMake(MAXFLOAT, MAXFLOAT)].height;
-    CGSize trueSize = [self tc_boundingSizeWithFont:font constraintSize:size];
+                                              constraintSize:CGSizeMake(MAXFLOAT, MAXFLOAT)
+                                                 lineSpacing:lineSpacing].height;
+    CGSize trueSize = [self tc_boundingSizeWithFont:font constraintSize:size lineSpacing:lineSpacing];
     NSInteger numberOfLine = 0;
     CGFloat trueNumberOfLine = trueSize.height / lineHeight;
     if (trueNumberOfLine > line) {
@@ -61,6 +63,16 @@
         }
     }
     return CGSizeMake(trueSize.width, numberOfLine * lineHeight);
+}
+
+- (CGSize)tc_boundingSizeWithFont:(UIFont *)font
+                   constraintSize:(CGSize)size
+                         showLine:(NSInteger)line {
+    
+    return [self tc_boundingSizeWithFont:font
+                          constraintSize:size
+                             lineSpacing:0
+                                showLine:line];
 }
 
 - (NSString *)tc_MD5Digest {
