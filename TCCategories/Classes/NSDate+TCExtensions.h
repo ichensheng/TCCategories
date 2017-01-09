@@ -83,6 +83,9 @@
 + (NSDate *)tc_dateWithMinutesFromNow:(NSInteger)minutes;
 + (NSDate *)tc_dateWithMinutesBeforeNow:(NSInteger)minutes;
 
+// 一周之内
+- (BOOL)tc_isInOneWeek;
+
 // Comparing dates
 - (BOOL)tc_isEqualToDateIgnoringTime:(NSDate *)date;
 - (BOOL)tc_isToday;

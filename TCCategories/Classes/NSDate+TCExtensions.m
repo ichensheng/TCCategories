@@ -155,6 +155,11 @@
     return [NSDate dateWithTimeIntervalSinceReferenceDate:timeInterval];
 }
 
+// 一周之内
+- (BOOL)tc_isInOneWeek {
+    return [self compare:[[NSDate date] tc_dateByAddingDays:-6]] == NSOrderedDescending;
+}
+
 // Comparing dates
 - (BOOL)tc_isEqualToDateIgnoringTime:(NSDate *)date {
     NSDateComponents *components1 = [CURRENT_CALENDAR components:CALENDAR_COMPONENTS fromDate:self];

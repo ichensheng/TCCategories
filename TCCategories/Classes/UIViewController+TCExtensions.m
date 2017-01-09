@@ -103,7 +103,9 @@ NSString const * kAddedBackButton = @"addedBackButton";
     NSInteger count = self.navigationController.viewControllers.count;
     NSArray *classes = @[[UITabBarController class], [UINavigationController class]];
     if (count >= 2 && ![classes containsObject:[self class]]) {
-        if (!self.navigationItem.leftBarButtonItem) { // 不覆盖自定义的leftBarButtonItem
+        if (!self.navigationItem.leftBarButtonItem
+            || !self.navigationItem.leftBarButtonItem.title) { // 不覆盖自定义的leftBarButtonItem
+            
             NSString *title = self.backButtonTitle;
             if (!title) {
                 UIViewController *preViewController = self.navigationController.viewControllers[count - 2];
