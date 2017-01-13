@@ -54,9 +54,9 @@ NSString const * kSearchDisplayController = @"searchDisplayController";
 }
 
 - (void)tc_viewDidAppear:(BOOL)animated {
-    self.tableView.showsVerticalScrollIndicator = NO;
+    self.tableView.scrollEnabled = NO;
     [self tc_viewDidAppear:animated];
-    self.tableView.showsVerticalScrollIndicator = YES;
+    self.tableView.scrollEnabled = YES;
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
